@@ -7,6 +7,8 @@
 
 For canine (canFam3.1), gistic2 run needs a few changes. You will need matlab to change code and recompile top level executable module or script, `gp_gistic2_from_seg`. I am using **v2.0.22** from ftp://ftp.broadinstitute.org/pub/GISTIC2.0/
 
+**PS:** If you are unable to re-compile (so as we) matlab script using updated GISTIC2 version, try using pre-compiled matlab script, `gp_gistic2_from_seg_upd`. For this to work, you will need to use *canfam3_1_order.mat* and may require to downgrade Matlab runtime to MCR/8.0 and gistic2 to [v2.0.22](ftp://ftp.broadinstitute.org/pub/GISTIC2.0/all_versions/). **Please note** that our pre-compiled matlab script is based on relatively older reference genome annotations and cytoband information for CanFam 3.1 (~2011). Please make sure to **manually verify GISTIC2 peaks** by loading input copy-number segments into genome browser like [IGV](http://software.broadinstitute.org/software/igv/home) or [JBrowse](https://jbrowse.org/).
+
 ### Recompile `gp_gistic2_from_seg`
 
 Following are a few changes I made after getting input from a colleague, [Emmanuel Martinez](https://github.com/jemartinezledes).
